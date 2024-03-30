@@ -1,0 +1,198 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+*{
+	
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #BDDBF9;
+    font-family: Yanone Kaffeesatz, sans-serif;
+    padding: 0;
+}
+
+header {
+  background-color: #36454F;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: relative;
+}
+
+li{
+	list-style: none;
+	color: white;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+b{
+	color: #36454F;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+c{
+	padding-right: 15px;
+}
+
+p1{
+	font-size: 25px;
+	color: #36454F;
+}
+
+.hamburger{
+	display: none;
+	cursor: pointer;
+}
+
+.bar{
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	transition: all ease-in-out;
+	background-color: white;
+}
+
+@media(max-width:1000px){
+	.hamburger{
+		display: block;;
+	}
+	.hamburger{
+		opacity: 0;
+	}
+	.hamburger.active .bar:nth-child(1){
+		transform: translateY(8px) rotate(45deg);
+	}
+}
+
+nav-item{
+	display: block;
+	margin: 16px 0;
+	color: white;
+}
+
+.nav-item :hover
+{
+	color:navy;
+}
+
+.nav-menu.active{
+	left: 0;
+	color: white;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    opacity: 1; /* Set opacity to 1 to make it visible */
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    }
+    
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: 36454F;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  .nav-menu.active {
+    left: 0;
+  }
+  }
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  background-color: #36454F;
+  color: white;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  background-color:  #36454F;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover{
+	color:navy;
+}
+
+
+
+.subnav {
+  overflow: hidden;
+    background-color:  #36454F;
+}
+
+.subnav-content {
+  display: none;
+  position: relative;
+  top: 100%;
+  left: 0;
+  background-color: #36454F;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.subnav:hover .subnav-content{
+  display: block;
+}
+
+.subnav-content:hover{
+	color: navy;
+}
+
+table{
+	border-spacing: 30px;
+	border: 1px solid;
+	text-align: center;
+	box-align: center;
+	padding: 10px;
+	table-layout: fixed;
+  	width: 100%;
+}
+
+button {
+    padding:10px 25px; 
+    background:#36454F;
+    color:white; 
+    border:0 none;
+    cursor:pointer;
+    border-radius: 5px; 
+}
